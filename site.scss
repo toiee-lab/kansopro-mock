@@ -1,0 +1,15 @@
+// 1. Your custom variables and variable overwrites.
+$global-link-color: #DA7D02;
+$global-link-hover-color: rgb(219, 106, 0); 
+$global-primary-background: #da7d02;
+$global-secondary-background: rgb(48, 37, 73);
+
+// 2. Import default variables and available mixins.
+@import "uikit-3.2.2/src/scss/variables-theme.scss";
+@import "uikit-3.2.2/src/scss/mixins-theme.scss";
+
+// 3. Your custom mixin overwrites.
+@mixin hook-card() { color: #000; }
+
+// 4. Import UIkit.
+@import "uikit-3.2.2/src/scss/uikit-theme.scss";
