@@ -1,8 +1,9 @@
 // 1. Your custom variables and variable overwrites.
-$global-link-color: #DA7D02;
-$global-link-hover-color: rgb(219, 106, 0); 
-$global-primary-background: #da7d02;
-$global-secondary-background: rgb(48, 37, 73);
+$global-link-color: #8F6893;;
+$global-link-hover-color: #d2bddd; 
+$global-primary-background: #8F6893;
+$global-secondary-background: #d2bddd;
+$global-color: #8F6893;
 
 // 2. Import default variables and available mixins.
 @import "uikit-3.2.2/src/scss/variables-theme.scss";
