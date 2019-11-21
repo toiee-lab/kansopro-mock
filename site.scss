@@ -4,12 +4,14 @@ $global-link-hover-color: #d2bddd;
 $global-primary-background: #8F6893;
 $global-secondary-background: #d2bddd;
 $global-color: #8F6893;
-$global-muted-background: #d2bddd
+$global-muted-background: #d2bddd;
 // 2. Import default variables and available mixins.
+
 @import "uikit-3.2.2/src/scss/variables-theme.scss";
 @import "uikit-3.2.2/src/scss/mixins-theme.scss";
 
 // 3. Your custom mixin overwrites.
+
 @mixin hook-card() { color: #000; }
 
 // 4. Import UIkit.
