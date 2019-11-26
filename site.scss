@@ -1,10 +1,13 @@
 // 1. Your custom variables and variable overwrites.
-$global-link-color: #8F6893;;
-$global-link-hover-color: #d2bddd; 
-$global-primary-background: #8F6893;
-$global-secondary-background: #d2bddd;
-$global-color: #8F6893;
-$global-muted-background: #d2bddd;
+$primary-color: #a7d88c;
+$secondary-color: #e7f1d3;
+$global-primary-background: #f0fbe9;
+$global-color: #4b5448;
+
+$global-link-color: $primary-color;
+$global-link-hover-color: $secondary-color; 
+$global-secondary-background: $primary-color; //ボタン背景色
+$global-muted-background: $primary-color; //ナビメニュー背景色
 // 2. Import default variables and available mixins.
 
 @import "uikit-3.2.2/src/scss/variables-theme.scss";
@@ -14,10 +17,56 @@ $global-muted-background: #d2bddd;
 
 @mixin hook-card() { color: #000; }
 
-@mixin hook-base-h2(){
-        border-left: 5px solid $global-color;
-        padding-left: 8px;
+@mixin hook-base-h1(){
+    margin-top: 60px;
 }
+
+@mixin hook-base-h2(){
+        border-left: 5px solid $secondary-color;
+        padding-left: 8px;
+        margin-top: 60px;
+}
+
+@mixin hook-alert(){
+    background-color: $secondary-color;
+    padding: 25px 35px;
+}
+
+@mixin hook-button(){
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+@mixin footer-aera (){
+    background-color: $global-color;
+    color: #fbfaf5;
+    padding: 50px;
+    margin-top: 100px;
+}
+
+#footer {
+    @include footer-aera();
+}
+
+@mixin copyright (){
+    margin-top: 50px;
+    text-align: center;
+}
+
+#footer-copyright {
+    @include copyright();
+}
+
+@mixin background-color (){
+    background-color: $global-primary-background;
+    padding: 50px 0;
+    margin: 40px 0;
+}
+
+.backcolor {
+    @include background-color();
+}
+
 
 // 4. Import UIkit.
 @import "uikit-3.2.2/src/scss/uikit-theme.scss";
